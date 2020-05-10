@@ -22,7 +22,7 @@ print("> The screen will also have a randomized background colour and turtle col
 t = turtle.Turtle ()
 
 def main():
-   # Create a screen that has a randomized size, between 200 and 900 inclusive for the x, and 400 and and 900 for y
+   # Create a screen that has a randomized size, between 500 and 900 for the x and y dimensions
    x = random.randint (500,900)
    y = random.randint (500,900)
    turtle.setup(x,y)
@@ -71,20 +71,20 @@ def leftclick_time (x, y):
     t.goto (x, y)
     
 #Create an if statement that draws a square if the mouse is clicked in the top left quadrant
-    if ((t.xcor () <= 0) and (t.xcor () >= -900) and (t.ycor () >=0) and (t.ycor () <= 900))  :
+    if ((t.xcor () <= 0) and (t.xcor () >= -900) and (t.ycor () >=0) and (t.ycor () <= 900)):
         draw_square()
 
 
 #Create an if statement that draws a triangle if the mouse is clicked in the top right quadrant
-    if ((t.xcor () > 0) and (t.xcor () < 901) and (t.ycor () >0) and (t.ycor () < 901)) :
+    if ((t.xcor () > 0) and (t.xcor () < 901) and (t.ycor () >0) and (t.ycor () < 901)):
         draw_triangle()
         
 #Create an if statement that draws a circle if the mouse is clicked in the bottom right quadrant
-    if ((t.xcor () < 0) and (t.xcor () > -901) and (t.ycor () <0) and (t.ycor () > -901)) :
+    if ((t.xcor () < 0) and (t.xcor () > -901) and (t.ycor () <0) and (t.ycor () > -901)):
         draw_circle()
        
 #Create an if statement that draws a pentagon if the mouse is clicked in the bottom left quadrant of the screen
-    if  ((t.xcor () > 0) and (t.xcor () < 901) and (t.ycor () <0) and (t.ycor () > -901)) :
+    if  ((t.xcor () > 0) and (t.xcor () < 901) and (t.ycor () <0) and (t.ycor () > -901)):
         draw_pentagon()
        
 def draw_square():
