@@ -34,7 +34,7 @@ def main():
    window.title("TostiS98 - Turtle GUI")
   
   
-   #Define all of the necessary variables with the cooresponding oucomes of the functions
+   #Define all of the necessary variables with the cooresponding outcomes of the functions
    background_colour = pick_background ()
   
    window.bgcolor(background_colour)
